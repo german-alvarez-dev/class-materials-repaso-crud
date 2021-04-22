@@ -29,13 +29,13 @@
           <label for="park-list">Parque en el que se encuentra:</label>
           <select name="park" class="form-control" id="park-list">
             <option>{{park_id.name}}</option>
-            {{#each values}}
+            {{!-- {{#each values}} --}}
             <option value="{{values.[1].id}}">{{values.[1].name}}</option>
-            {{/each}}
+            {{!-- {{/each}} --}}
           </select>
         </div>
 
-        <button type="submit" class="btn btn-dark">Crear montaña rusa</button>
+        <button type="submit" class="btn btn-dark">Guardar cambios</button>
         <a href="/coasters" class="btn btn-dark">Volver</a>
 
       </form>
